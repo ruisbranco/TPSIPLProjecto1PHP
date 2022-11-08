@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main style="width: 60%; margin-left: 20%;">
+      <h1>Registo de Utilizador</h1>
+      <form method="POST" action="../php/registaUtilizador.php">
+      
+        <div class="row ">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" placeholder="Insira o seu Nome" aria-label="Primeiro Nome" id="nome" name="nomeUser">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <label for="apelido">Apelido</label>
+                <input type="text" class="form-control" placeholder="Insira o Apelido" aria-label="Apelido" id="apelido" name="apelido">
+            </div>
+          </div><br>
+        <div class="row ">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" placeholder="Insira o seu email" aria-label="Email" id="email" name="email">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <label for="pass">Password</label>
+                <input type="password" class="form-control" placeholder="Insira a password" aria-label="Password" id="pass" name="pass">
+            </div>
+        </div><br>
+        <div class="row ">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <label for="mod">Morada</label>
+                <input type="text" class="form-control" placeholder="Rua de cima, nº 825" aria-label="Morada" id="mod" name="mod">
+            </div>
+        </div><br>
+        <div class="row ">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <label for="mod2">Morada 2</label>
+                <input type="text" class="form-control" placeholder="Apartamento, hotel, casa,etc." aria-label="Morada2" id="mod2" name="mod2">
+            </div>
+        </div><br>
+        <div class="row ">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <label for="cidade">Cidade:</label>
+                <input type="text" class="form-control" placeholder="Insira a Cidade" aria-label="Cidade" id="cidade" name="cidadeUser">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <label for="distrito">Distrito</label>
+                <select class="form-select" placeholder="" aria-label="distrito" id="distrito" name="distritoUser">
+
+                  <option value='Aveiro'>Aveiro</option>
+                  <option value='Beja'>Beja</option>
+                  <option value='Braga'>Braga</option>
+                  <option value='Bragança'>Bragança</option>
+                  <option value='Castelo Branco'>Castelo Branco</option>
+                  <option value='Coimbra'>Coimbra</option>
+                  <option value='Évora'>Évora</option>
+                  <option value='Faro'>Faro</option>
+                  <option value='Guarda'>Guarda</option>
+                  <option value='Leiria'>Leiria</option>
+                  <option value='Lisboa'>Lisboa</option>
+                  <option value='Portalegre'>Portalegre</option>
+                  <option value='Porto'>Porto</option>
+                  <option value='Santarém'>Santarém</option>
+                  <option value='Setúbal'>Setúbal</option>
+                  <option value='Viana do Castelo'>Viana do Castelo</option>
+                  <option value='Vila Real'>Vila Real</option>
+                  <option value='Viseu'>Viseu</option>
+                  </select>
+              </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+                <label for="cpostal">Código Postal</label>
+                <input type="text" class="form-control" placeholder="xxxx-yyy" aria-label="Código Postal" id="cpostal" name="cpUser">
+            </div>
+        </div><br>
+        <div class="row ">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <label for="datini">Data Início:</label>
+                <input type="date" class="form-control" placeholder="dd / mm / aaaa" aria-label="Data Início" id="datini" name="datiniUser">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <label for="datfin">Data Final:</label>
+                <input type="date" class="form-control" placeholder="dd / mm / aaaa" aria-label="Data Final" id="datfin" name="datfinUser">
+            </div>
+        </div><br>
+        <div class="row ">
+            <div class="col">
+            <input type="checkbox" value="ok" name="check">&nbsp;Clique em mim
+            </div>
+        </div><br>
+        <div class="row ">
+            <div class="col">
+            <input type="submit" value="Inserir Registo" class="btn btn-primary">
+            </div>
+        </div><br>
+
+
+
+
+      </form>
+
+    </main>
+    <footer></footer>
+</body>
+</html>
